@@ -19,3 +19,18 @@ unweightedGraph.AdjacencyList = new List<List<int>>()
 };
 var res = unweightedGraph.Bfs();
 Console.WriteLine(string.Join(", ", res));
+
+UGraph unweightedGraph2 = new UGraph();
+unweightedGraph2.AdjacencyList = new List<List<int>>()
+{
+    new() {1},
+    new() {2},
+    new() {0},
+    new() {4, 7},
+    new() {5},
+    new() {6, 0},
+    new() {4,0,2},
+    new () {5,3}
+};
+var res2 = unweightedGraph2.GetLowLinkValues();
+Console.WriteLine(string.Join(", ", res2));
