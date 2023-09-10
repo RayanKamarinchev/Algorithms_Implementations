@@ -25,7 +25,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DinicsAlgorithm", "MaxFlowC
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ElementaryMath", "ElementaryMath\ElementaryMath.csproj", "{207362DD-25C5-4E0E-9A6B-0727465F8AEA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimsAlgorithm", "PrimsAlgorithm\PrimsAlgorithm.csproj", "{5B0A869A-7130-4C4C-95D1-6862519823A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PrimsAlgorithm", "PrimsAlgorithm\PrimsAlgorithm.csproj", "{5B0A869A-7130-4C4C-95D1-6862519823A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElementaryMathSol", "ElementaryMathSol\ElementaryMathSol.csproj", "{AF27B32E-6EBE-4A24-9EC9-C5B232ADCEAD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -145,6 +147,18 @@ Global
 		{5B0A869A-7130-4C4C-95D1-6862519823A0}.Release|x64.Build.0 = Release|Any CPU
 		{5B0A869A-7130-4C4C-95D1-6862519823A0}.Release|x86.ActiveCfg = Release|Any CPU
 		{5B0A869A-7130-4C4C-95D1-6862519823A0}.Release|x86.Build.0 = Release|Any CPU
+		{AF27B32E-6EBE-4A24-9EC9-C5B232ADCEAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF27B32E-6EBE-4A24-9EC9-C5B232ADCEAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF27B32E-6EBE-4A24-9EC9-C5B232ADCEAD}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{AF27B32E-6EBE-4A24-9EC9-C5B232ADCEAD}.Debug|x64.Build.0 = Debug|Any CPU
+		{AF27B32E-6EBE-4A24-9EC9-C5B232ADCEAD}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{AF27B32E-6EBE-4A24-9EC9-C5B232ADCEAD}.Debug|x86.Build.0 = Debug|Any CPU
+		{AF27B32E-6EBE-4A24-9EC9-C5B232ADCEAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF27B32E-6EBE-4A24-9EC9-C5B232ADCEAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF27B32E-6EBE-4A24-9EC9-C5B232ADCEAD}.Release|x64.ActiveCfg = Release|Any CPU
+		{AF27B32E-6EBE-4A24-9EC9-C5B232ADCEAD}.Release|x64.Build.0 = Release|Any CPU
+		{AF27B32E-6EBE-4A24-9EC9-C5B232ADCEAD}.Release|x86.ActiveCfg = Release|Any CPU
+		{AF27B32E-6EBE-4A24-9EC9-C5B232ADCEAD}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -158,6 +172,7 @@ Global
 		{7A0D3448-4E79-4245-A6D9-93369B35A4A3} = {E4E3469D-423E-4F48-98C7-4CD5B8400C42}
 		{207362DD-25C5-4E0E-9A6B-0727465F8AEA} = {E4E3469D-423E-4F48-98C7-4CD5B8400C42}
 		{5B0A869A-7130-4C4C-95D1-6862519823A0} = {E4E3469D-423E-4F48-98C7-4CD5B8400C42}
+		{AF27B32E-6EBE-4A24-9EC9-C5B232ADCEAD} = {E4E3469D-423E-4F48-98C7-4CD5B8400C42}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {2EF4B060-CC16-4FD5-BAC9-0AFA03CC6EA2}
