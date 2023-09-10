@@ -1,5 +1,6 @@
 ﻿namespace Graphs
 {
+    //Undirected
     public class Graph
     {
         private List<Tuple<int, int>>[] adj { get; set; }
@@ -7,7 +8,7 @@
 
         public Graph(int nodes)
         {
-            nodes = nodes;
+            this.nodes = nodes;
             adj = new List<Tuple<int, int>>[nodes];
             for (int i = 0; i < nodes; ++i)
                 adj[i] = new List<Tuple<int, int>>();
@@ -45,6 +46,41 @@
             }
 
             return dist;
+        }
+
+        public List<(int, int)> FindMST()
+        {
+            List<(int, int)> minimumSpanningTree = new List<(int, int)>();
+            bool[] visited = new bool[nodes];
+
+            PriorityQueue<(int, int)> priorityQueue = new PriorityQueue<(int, int)>();
+            // Start with vertex 0 as the initial vertex
+            priorityQueue.Enqueue((0, 0));
+
+            while (priorityQueue.Count > 0)
+            {
+                var (vertex, weight) = priorityQueue.Dequeue();
+
+                if (visited[vertex])
+                    continue;
+
+                visited[vertex] = true;
+
+                foreach (var (neighbor, neighborWeight) in adj[vertex])
+                {
+                    if (!visited[neighbor])
+                    {
+                        priorityQueue.Enqueue((neighbor, neighborWeight));
+                    }
+                }
+
+                if (vertex != 0)
+                {
+                    minimumSpanningTree.Add((vertex, weight));
+                }
+            }
+
+            return minimumSpanningTree;
         }
     }
 }

@@ -34,3 +34,20 @@ unweightedGraph2.AdjacencyList = new List<List<int>>()
 };
 var res2 = unweightedGraph2.GetLowLinkValues();
 Console.WriteLine(string.Join(", ", res2));
+
+Graph graphForPrim = new Graph(5);
+graphForPrim.addEdge(0, 1, 2);
+graphForPrim.addEdge(0, 3, 6);
+graphForPrim.addEdge(1, 2, 3);
+graphForPrim.addEdge(1, 3, 8);
+graphForPrim.addEdge(1, 4, 5);
+graphForPrim.addEdge(2, 4, 7);
+graphForPrim.addEdge(3, 4, 9);
+
+List<(int, int)> minimumSpanningTree = graphForPrim.FindMST();
+
+Console.WriteLine("Minimum Spanning Tree Edges:");
+foreach (var edge in minimumSpanningTree)
+{
+    Console.WriteLine($"{edge.Item1} - {edge.Item2}");
+}
