@@ -5,6 +5,12 @@
 
     public static void Main(string[] args)
     {
+        //4
+        //1 5
+        //3 3
+        //4 5
+        //-1 -6
+
         int numPairs = int.Parse(Console.ReadLine());
 
         Dictionary<long, int> uniqueAnswers = new Dictionary<long, int>();
